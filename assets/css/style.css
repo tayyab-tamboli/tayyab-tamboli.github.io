@@ -236,7 +236,8 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 a.hoverline:hover {
-  border-bottom: 3px solid #009688 !important;
+  border-bottom: 1.5px solid #009688 !important;
+  -webkit-transform:scale(1.2);
 }
 #skills .card.large {
   height: 360px;
