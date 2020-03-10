@@ -234,10 +234,11 @@ a.hoverline {
   transition: 0.25s all;
   -moz-transition: 0.25s all;
   -webkit-transition: 0.25s all;
+  -webkit-transform:scale(2);
 }
 a.hoverline:hover {
   border-bottom: 1.5px solid #009688 !important;
-  -webkit-transform:scale(1.2);
+  -webkit-transform:scale(2);
 }
 #skills .card.large {
   height: 360px;
