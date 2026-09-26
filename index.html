@@ -3,602 +3,624 @@
 
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width initial-scale=1"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"/>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="/assets/css/style.css"/>
-    <title>Tayyab L. Tamboli | Software Developer</title>
-    <meta name="author" content="Tayyab L. Tamboli"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Tayyab Tamboli | Software Developer, AVP at Citi</title>
+    <meta name="author" content="Tayyab Tamboli"/>
+    <meta name="description"
+          content="Tayyab Tamboli, Assistant Vice President at Citi. 9+ years building backend systems with Java, Spring Boot and microservices."/>
+    <meta property="og:title" content="Tayyab Tamboli | Software Developer, AVP at Citi"/>
+    <meta property="og:description"
+          content="Assistant Vice President at Citi. 9+ years building backend systems with Java, Spring Boot and microservices."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://tayyab-tamboli.github.io/assets/img/og-card.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Tayyab Tamboli, Assistant Vice President at Citi"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="og:url" content="https://tayyab-tamboli.github.io/"/>
+    <meta name="theme-color" content="#0f766e"/>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script>
+        // Apply saved theme before paint to avoid a flash
+        try {
+            const t = localStorage.getItem("theme");
+            if (t) document.documentElement.dataset.theme = t;
+        } catch (e) {}
+    </script>
 </head>
 
-<body>
-<!-- Navigation Menu-->
-<nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-        <li class="logo">
-            <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-               class="brand-logo teal-text">
-                <h1>
-                    Tayyab Tamboli<span class="brown-text light">Software Developer</span>
-                </h1>
-            </a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-                    class="mdi-social-person small"></i><span>About</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Experience section" href="#experience"
-               class="waves-effect waves-dark cyan-text"><i
-                    class="mdi-action-trending-up small"></i><span>Experience</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Projects section" href="#projects"
-               class="waves-effect waves-dark indigo-text"><i
-                    class="mdi-av-web small"></i><span>Projects</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i
-                    class="mdi-av-equalizer small"></i><span>Skills</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Education section" href="#education"
-               class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Contact section" href="#contact"
-               class="waves-effect waves-dark brown-text"><i
-                    class="mdi-content-mail small"></i><span>Contact</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Open Tayyab's resume in a new tab"
-               href="https://drive.google.com/file/d/1hiJ8Mm9tfADhcqorrFmvxcoO_OD3CBlC/view" target="_blank"
-               class="waves-effect waves-dark grey-text text-darken-3"><i
-                    class="mdi-action-description small"></i><span>Resume</span></a>
-        </li>
-    </ul>
-</nav>
-<nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-        <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Tayyab L.
-            Tamboli</a><span class="brown-text light">Software Developer</span>
-    </div>
-</nav>
-<nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-        <li class="bold">
-            <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-                    class="mdi-social-person small"></i><span>About</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Experience section" href="#experience"
-               class="waves-effect waves-dark cyan-text"><i
-                    class="mdi-action-trending-up small"></i><span>Experience</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Projects section" href="#projects"
-               class="waves-effect waves-dark indigo-text"><i
-                    class="mdi-av-web small"></i><span>Projects</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i
-                    class="mdi-av-equalizer small"></i><span>Skills</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Education section" href="#education"
-               class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Contact section" href="#contact"
-               class="waves-effect waves-dark brown-text"><i
-                    class="mdi-content-mail small"></i><span>Contact</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Open Tayyab's Resume in a new tab"
-               href="https://drive.google.com/file/d/1ZaQh7Q70eBzMOvgc1grAatbmQGqLTkw7/view" target="_blank"
-               class="waves-effect waves-dark grey-text text-darken-3"><i
-                    class="mdi-action-description small"></i><span>Resume</span></a>
-        </li>
-    </ul>
-</nav>
-<!-- Main Content-->
-<main>
-    <section id="intro" class="section scrollspy full-height">
-        <div class="overlay"></div>
-        <div class="container">
-            <h2>Hi, I am Tayyab,</h2>
-            <h5>Professional Summary:</h5>
-            <p>
-                Experienced software engineer with over 8 years of hands-on experience in backend development,
-                complemented by proficient skills in front-end technologies. Adept at designing, implementing,
-                and optimizing scalable software solutions to meet business needs. Strong problem-solving abilities
-                and a collaborative approach to working in agile environments.
-            </p>
-            <h5>Technical Proficiency:</h5>
-            <p>
-                • Languages: Java, Python, Angular, React, SQL, NoSQL<br>
-                • Frameworks: Spring Boot, Spring WebFlux, Spring Batch, Activiti BPM, PySpark<br>
-                • DevOps: AWS, Kubernates, Jenkins, Docker, Git, Maven<br>
-                • Tools: Jira, Postman, IntelliJ, Swagger<br>
-                • Databases: Oracle, MySQL, MongoDB<br>
-                • Practices: REST APIs, Microservices, CI/CD, Reactive Programming, Agile, Event-Driven Architecture,
-                Data Engineering<br>
-            </p>
-            <h5>Career Objective:</h5>
-            <p>
-                Passionate software engineer with a proven track record of delivering robust backend solutions and
-                enhancing user experiences. Seeking a challenging role where I can apply my deep understanding of
-                backend technologies to drive innovation, optimize performance, and create impactful software solutions
-                that elevate business outcomes and exceed customer expectations.
-            </p>
-        </div>
-    </section>
-    <section id="about" class="section scrollspy">
-        <h3 class="page-title white-text teal">About</h3>
-        <div class="container flow-text">
-            <blockquote>
-                <h2>
-                    Experienced software engineer and team leader in Full-Stack development, specializing in the finance domain and Agile
-                    methodology. Over 8 years of expertise in backend and front-end technologies, with a proven track record of managing and
-                    mentoring teams for project success.
-                </h2>
-            </blockquote>
-            <p>
-                I have 8 years of experience as a Software Developer with history of working in finance and commerce
-                industry.
-                While I am a proficient Full-Stack developer, my expertise is in building scalable backend services and
-                interactive frontend apps.
-            </p>
-            <p>
-                I love building the things. While hard engineering problems are often fun to tackle,
-                I am most attracted to solving problems with business justification.
-            </p>
-            <p>
-                <strong>Current Focus</strong>:&nbsp;
-                <a aria-label='Reactive Programming'>Reactive Programming</a> //
-                <a aria-label="MicroServices">MicroServices</a>&nbsp;//&nbsp;
-                <a aria-label="Cloud">Cloud</a>&nbsp;//&nbsp;
-                <a aria-label="Cloud">AWS</a>
-            </p>
-        </div>
-    </section>
-    <section id="experience" class="section scrollspy">
-        <h3 class="page-title white-text teal">Experience</h3>
-        <div class="container">
-            <div class="card">
-                <div class="card-content">
-                    <div class="row">
-                        <div class="col s12 m2">
-                            <a><img alt="Globant logo" src="/assets/img/Globant.png"
-                                    class="responsive-img center-block"/></a>
-                        </div>
-                        <div class="col s12 m10">
-                            <p>
-                                <span class="card-title"><a class="teal-text hoverline">Globant India</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="role brown-text">Technical Lead</div>
-                    <ul>
-                        <li>Leading the development of complex Adobe enterprise applications using event-driven
-                            microservices and reactive
-                            programming with Spring WebFlux.
-                        </li>
-                        <li>Designed and implemented high-performance reactive REST endpoints to handle asynchronous
-                            operations and scale
-                            eﬀiciently.
-                        </li>
-                        <li>Developed scalable backend services and APIs using Java, Spring Boot, and RESTful
-                            architecture.
-                        </li>
-                        <li>Built and maintained SDKs for microservice communication, enabling easy integration across
-                            internal systems.
-                        </li>
-                        <li>Developed robust communication mechanisms using RESTful APIs, message queues (Kafka).</li>
-                        <li>Managed a team of 6 developers — planned sprint goals, aligned priorities, and ensured
-                            on-time delivery of critical
-                            releases.
-                        </li>
-                        <li>Integrated AWS services such as EC2, S3, Lambda, SQS, API Gateway, and IAM to build, deploy,
-                            and secure scalable cloud-based microservices.
-                        </li>
-                        <li>Utilized CloudWatch for centralized logging, metrics, and alerting across distributed
-                            applications.
-                        </li>
-                        <li>Adopted modern DevOps practices with CI/CD pipelines, automated test suites, and monitoring
-                            tools to maintain code
-                            quality and deployment speed.
-                        </li>
-                        <li>Conducted regular code reviews, provided technical mentorship, and supported professional
-                            growth of team
-                            members.
-                        </li>
-                        <li>Contributed to a large-scale data engineering initiative using Databricks, Python, and
-                            PySpark to enrich customer datasets used by Sales and Marketing teams for outreach and engagement.
-                        </li>
-                        <li>Worked on backend services using Python and gRPC to handle real-time user interactions and
-                            data capture.
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <span>JUL 2021 - PRESENT | Pune, MH</span>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="row">
-                        <div class="col s12 m2">
-                            <a><img alt="TIAA logo" src="/assets/img/tiaa.jpg" class="responsive-img center-block"/></a>
-                        </div>
-                        <div class="col s12 m10">
-                            <p>
-                                <span class="card-title"><a class="teal-text hoverline">TIAA GBS India</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="role brown-text">Full-Stack Software Developer</div>
-                    <ul>
-                        <li>
-                            Developed webservices in Java using Spring framework.
-                        </li>
-                        <li>
-                            Developed REST APIs in Java using Spring Boot framework.
-                        </li>
-                        <li>
-                            Worked on MicroServices using Spring Cloud.
-                        </li>
-                        <li>
-                            Developed front end using Angular 6+.
-                        </li>
-                        <li>
-                            Worked on BDD approach using Cucumber. Unit Tested these API using JUnit, Mockito.
-                        </li>
-                        <li>
-                            Worked on creating and managing Activiti BPM workflows for different transactions.
-                        </li>
-                        <li>
-                            Worked on UI components which can be drive using backend Activiti processes.
-                        </li>
-                        <li>
-                            Worked on implementing distributed caching using Hazelcast.
-                        </li>
-                    </ul>
-                    <h6>Accomplishments</h6>
-                    <ul>
-                        <li>
-                            Runner-Up of Innovation Premier Leauge (Hackathon) for developing the portal for L&D
-                            department to keep
-                            track of Employee skillset available & managing the Trainings programs arranged in TIAA.
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <span>DEC 2018 - JUL 2021 | Pune, MH</span>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="row">
-                        <div class="col s12 m2">
-                            <a><img alt="BNY logo" src="/assets/img/bny.jpg" class="responsive-img center-block"/></a>
-                        </div>
-                        <div class="col s12 m10">
-                            <p>
-                                <span class="card-title"><a class="teal-text hoverline">BNY Mellon Technology</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="role brown-text">Application Developer</div>
-                    <ul>
-                        <li>
-                            Developed REST APIs in Java that will feed data to the front-end widgets using spring MVC.
-                        </li>
-                        <li>
-                            Worked on MicroServices using Spring Cloud.
-                        </li>
-                        <li>
-                            Developed Spring Batch Application which can triggered using JMS message and insert data
-                            into DB.
-                        </li>
-                        <li>
-                            Developed an application to automate the validation transformer data.
-                        </li>
-                        <li>
-                            Developed an APIs to keep track of daily clients file dropped on Production environment.
-                        </li>
-                        <li>
-                            Developed an APIs to automate the process of manual replaying data files.
-                        </li>
-                        <li>
-                            Deployment of the Developed Code to Dev, Test, QA regions in BXP v2.0,3.0.
-                        </li>
-                        <li>
-                            Unit Tested these API using TDD, JUnit, Mockito.
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <span>Jun 2017 - Dec 2018 | Pune, MH</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects" class="section scrollspy">
-        <h3 class="page-title white-text teal">Projects</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6 l4">
-                    <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src="/assets/img/onlinecode.jpg" class="activator"/>
-                        </div>
-                        <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Tech_Evaluator
-                  <i class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                Online Programing test platform developed for TIAA.
-                            </p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title brown-text">Details<i class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><strong>Java & Spring Boot</strong> for backend</li>
-                                <li><strong>Angular 8</strong> on frontend</li>
-                                <li>Dynamic creatation Online Test template</li>
-                                <li>Online Runtime environment for Java code execution</li>
-                                <li>Online platform for conducting the online test for candidate hiring</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
 
-                <div class="col s12 m6 l4">
-                    <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src="/assets/img/skills.jpg" class="activator"/>
-                        </div>
-                        <div class="card-content">
-                <span class="card-title activator teal-text hoverline">TalentTrack
-                  <i class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                Portal Developed at TIAA for L&D Team to Keeping track of Employees skillset.
-                            </p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title brown-text">Details<i class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><strong>Java & Spring Boot</strong> for backend</li>
-                                <li><strong>Angular 7</strong> on frontend</li>
-                                <li>Poratl to keep track of Employee skillset</li>
-                                <li>App also be used for Internal Job posting</li>
-                                <li>Managing the Employee training programs</li>
-                            </ul>
-                        </div>
-                    </div>
+<!-- Navigation -->
+<header class="nav">
+    <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="Back to top">
+            <span class="brand-mark">TT</span>
+            <span class="brand-name">Tayyab Tamboli</span>
+        </a>
+        <nav aria-label="Primary">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#next">Next up</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+            <a class="btn btn-small" href="https://drive.google.com/file/d/16duYHKLaO8BopJMmXOXKqTfoGE-c1-zO/view"
+               target="_blank" rel="noopener">Resume</a>
+            <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu"
+                    aria-expanded="false" aria-controls="nav-links">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+    <!-- Intro -->
+    <section class="hero">
+        <div class="wrap hero-grid">
+            <div class="hero-text">
+                <p class="eyebrow"><span class="dot"></span>Assistant Vice President at Citi · Pune, India</p>
+                <h1>Hi, I am Tayyab.</h1>
+                <p class="lead">
+                    I'm an <strong>Assistant Vice President at Citi</strong> and a <strong>Java</strong> developer
+                    at heart. For 9+ years I've built backend systems with <strong>Java, Spring Boot and
+                    microservices</strong>: reactive services on Spring WebFlux and Kafka, data pipelines, and
+                    banking APIs. Before Citi I spent four and a half years at Globant, going from Senior Software
+                    Developer to Technical Lead to <strong>Technical Architect</strong>, and led the team.
+                    I'm not tied to one stack either. I've also worked with Python, PySpark and AWS, and built
+                    frontends in Angular and React.
+                </p>
+                <div class="hero-cta">
+                    <a class="btn" href="mailto:tayyabt120@gmail.com">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        Get in touch
+                    </a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/tayyabtamboli/" target="_blank"
+                       rel="noopener">LinkedIn</a>
+                    <a class="btn btn-ghost" href="https://github.com/tayyab-tamboli/" target="_blank"
+                       rel="noopener">GitHub</a>
                 </div>
-                <div class="col s12 m6 l4">
-                    <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src="/assets/img/result.png"/>
-                        </div>
-                        <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Web Based Result Analysis
-                  <i class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                B.E. Final Year Project.
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <figure class="hero-photo">
+                <img src="assets/img/profile.jpg" alt="Photo of Tayyab Tamboli" width="800" height="1000"/>
+            </figure>
+        </div>
+        <div class="wrap">
+            <div class="path">
+                <p class="path-label">Career path</p>
+                <ol class="path-steps">
+                    <li>
+                        <span class="path-year">2017</span>
+                        <span class="path-title">Application Developer</span>
+                        <span class="path-org">BNY Mellon</span>
+                    </li>
+                    <li>
+                        <span class="path-year">2018</span>
+                        <span class="path-title">Senior Software Developer</span>
+                        <span class="path-org">TIAA</span>
+                    </li>
+                    <li>
+                        <span class="path-year">2021</span>
+                        <span class="path-title">Senior Software Developer</span>
+                        <span class="path-org">Globant</span>
+                    </li>
+                    <li class="lead-step">
+                        <span class="path-year">2022</span>
+                        <span class="path-title">Technical Lead</span>
+                        <span class="path-org">Globant</span>
+                    </li>
+                    <li class="lead-step">
+                        <span class="path-year">2024</span>
+                        <span class="path-title">Technical Architect</span>
+                        <span class="path-org">Globant</span>
+                    </li>
+                    <li class="current">
+                        <span class="path-year">2026 · Now</span>
+                        <span class="path-title">Assistant Vice President</span>
+                        <span class="path-org">Citi</span>
+                    </li>
+                </ol>
+            </div>
+            <dl class="facts">
+                <div><dt>Experience</dt><dd>9+ years</dd></div>
+                <div><dt>Backend</dt><dd>Java, Spring, Kafka</dd></div>
+                <div><dt>Frontend</dt><dd>Angular, React</dd></div>
+                <div><dt>Cloud &amp; data</dt><dd>AWS, Databricks</dd></div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="wrap two-col">
+            <header class="section-head">
+                <p class="kicker">01</p>
+                <h2>About</h2>
+            </header>
+            <div class="prose">
+                <p class="pull">
+                    I like working on the parts of a system nobody sees but everybody depends on: the APIs, the
+                    event streams, and the batch jobs that quietly process millions of records.
+                </p>
+                <p>
+                    I started at BNY Mellon writing Spring Batch jobs and APIs for fund accounting. At TIAA I
+                    moved into full-stack work with Spring Boot, Angular and Activiti workflows, and built
+                    a couple of internal tools along the way. One of them came runner-up in the company hackathon.
+                </p>
+                <p>
+                    I joined Globant as a Senior Software Developer, became <strong>Technical Lead</strong> in July
+                    2022 and <strong>Technical Architect</strong> in April 2024. Most of that time was with product
+                    companies, where I <strong>led the team</strong>: I owned the design of event-driven
+                    microservices on Spring WebFlux, Kafka and AWS, planned the sprints, reviewed the code and
+                    made sure releases went out on time. I also moved into data engineering with Python and
+                    PySpark on Databricks, and wrote a batch job that enriches millions of email records for
+                    sales and marketing. On the side I ran Globant's Java training program and mentored
+                    100+ engineers until they were ready for project work.
+                </p>
+                <p>
+                    Since January 2026 I've been an <strong>Assistant Vice President at Citi</strong> on the
+                    Banking Payments and Deposits team, turning old mainframe workflows into Java APIs and
+                    working on deposit products that customers use every day.
+                </p>
+                <p>
+                    Java is my home ground, but I don't think of myself as only a Java developer. I love building
+                    things. Hard engineering problems are fun, but I'm most attracted to the ones with a real
+                    business reason behind them.
+                </p>
+                <p class="focus">
+                    <strong>Current focus:</strong>
+                    <span>Banking APIs</span> // <span>Microservices</span> // <span>AWS</span> //
+                    <span>AI-assisted development</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next up -->
+    <section id="next" class="section">
+        <div class="wrap two-col">
+            <header class="section-head">
+                <p class="kicker">02</p>
+                <h2>Next up</h2>
+            </header>
+            <div class="prose">
+                <p>
+                    I already use AI tools like Claude, Cursor, Copilot and Devin every day for writing code,
+                    reviewing it and debugging. What I want next is to get better at <em>building</em> with AI,
+                    not just using it. These are the things I'm spending my learning time on right now.
+                </p>
+                <div class="cards two next-cards">
+                    <article class="card">
+                        <h3>LLMs inside real services</h3>
+                        <p>Adding LLM calls to regular Java and Spring services properly: prompts, timeouts,
+                            retries, and keeping an eye on cost.</p>
+                    </article>
+                    <article class="card">
+                        <h3>RAG over internal data</h3>
+                        <p>Answering questions over company docs and data using embeddings and vector search,
+                            and making sure the answers are actually right.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Agents and MCP</h3>
+                        <p>Agents that can call real APIs and tools to finish a task, and how to give them that
+                            access safely.</p>
+                    </article>
+                    <article class="card">
+                        <h3>AI in regulated systems</h3>
+                        <p>Coming from banking, I'm interested in how AI fits where privacy, audit trails and
+                            compliance are not optional.</p>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
-    <section id="skills" class="section scrollspy">
-        <h3 class="page-title white-text teal">Skills</h3>
-        <div class="container">
-            <div class="card">
-                <div class="card-content">
-                    <h4 class="brown-text light">Back-End</h4>
-                    <div class="row text-center">
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/Core-Java.png" class="responsive-img"/>Core Java
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/Java-8.png" class="responsive-img"/>Java 8
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/spring.png" class="responsive-img"/>Spring Framework
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/Microservice.png" class="responsive-img"/>MicroServices
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/webservice.jpg" class="responsive-img"/>Web Services(REST &
-                            SOAP)
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/oracle.png" class="responsive-img"/>Oracle DB
-                        </div>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="kicker">03</p>
+                <h2>Experience</h2>
+            </header>
+
+            <ol class="timeline">
+                <li class="job">
+                    <div class="job-meta">
+                        <span class="date">Jan 2026 – Present</span>
+                        <span class="place">Pune, MH</span>
                     </div>
-                </div>
+                    <div class="job-body">
+                        <h3><span class="logo"><img src="assets/img/logos/citi.svg" alt="Citi logo" loading="lazy"/></span>Citi India <span class="now">Current</span></h3>
+                        <p class="role">Assistant Vice President</p>
+                        <ul class="highlights">
+                            <li>Banking Payments &amp; Deposits</li>
+                            <li>20+ microservices secured</li>
+                        </ul>
+                        <ul>
+                            <li>Part of the Banking Payments and Deposits team, working on core deposit products.</li>
+                            <li>Developing and enhancing REST APIs in Java and Spring Boot for deposits features.</li>
+                            <li>Worked on improvements to the deposit offers workflow and the services behind it.</li>
+                            <li>Rewriting older mainframe workflows as Java REST APIs, which makes them easier to
+                                maintain and to connect with newer systems.</li>
+                            <li>Fixed code-level security vulnerabilities across 20+ microservices.</li>
+                            <li>Worked on regulatory changes that reach Citi customers directly, where compliance and
+                                deadlines are fixed.</li>
+                            <li>Using Devin, GitHub Copilot and Cursor for coding, code reviews and debugging.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Java</li><li>Spring Boot</li><li>REST</li><li>Microservices</li><li>Mainframe migration</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="job">
+                    <div class="job-meta">
+                        <span class="date">Jul 2021 – Jan 2026</span>
+                        <span class="place">Pune, MH</span>
+                    </div>
+                    <div class="job-body">
+                        <h3><span class="logo"><img src="assets/img/logos/globant.png" alt="Globant logo" loading="lazy"/></span>Globant India</h3>
+                        <ol class="role-steps">
+                            <li><span class="role">Technical Architect</span><span class="role-date">Apr 2024 – Jan 2026</span></li>
+                            <li><span class="role">Technical Lead</span><span class="role-date">Jul 2022 – Apr 2024</span></li>
+                            <li><span class="role">Senior Software Developer</span><span class="role-date">Jul 2021 – Jul 2022</span></li>
+                        </ol>
+                        <ul class="highlights">
+                            <li>Led a team of 6</li>
+                            <li>Trained 100+ engineers</li>
+                            <li>Adobe · Dropbox</li>
+                        </ul>
+
+                        <h4>Adobe <span>client</span></h4>
+                        <ul>
+                            <li>Led development of Adobe enterprise applications built on event-driven microservices
+                                and reactive programming with Spring WebFlux.</li>
+                            <li>Designed and implemented reactive REST endpoints for async operations.</li>
+                            <li>Built and maintained SDKs that the internal microservices use to talk to each other.</li>
+                            <li>Service-to-service communication using REST APIs and Kafka.</li>
+                            <li>Managed a team of 6 developers: sprint planning, setting priorities and making sure
+                                critical releases went out on time.</li>
+                            <li>Worked with AWS (EC2, S3, Lambda, SQS, API Gateway, IAM) to build and deploy the
+                                services, and CloudWatch for logs, metrics and alerts.</li>
+                            <li>Set up CI/CD pipelines and automated tests, did regular code reviews and mentored
+                                the team.</li>
+                        </ul>
+
+                        <h4>Dropbox <span>client</span></h4>
+                        <ul>
+                            <li>Worked on a data engineering project using Databricks, Python and PySpark to enrich the
+                                customer data used by Sales and Marketing.</li>
+                            <li>Wrote a batch job that processes and enriches millions of email records in production.
+                                It helped the marketing team target leads better.</li>
+                            <li>Developed backend services in Python and gRPC for a chat-based engagement platform
+                                on Dropbox's product site.</li>
+                        </ul>
+
+                        <h4>Inside Globant</h4>
+                        <ul>
+                            <li>Ran the training program for Globant's Java community. I put together the curriculum,
+                                took hands-on sessions and mentored 100+ engineers from the talent pool until
+                                they were placed on client projects.</li>
+                        </ul>
+
+                        <div class="awards">
+                            <span class="awards-label">Awards</span>
+                            <span>Best Individual Award, Q1 2023</span>
+                            <span>“Pat on the Back”, Q3 2024</span>
+                        </div>
+                        <ul class="tags">
+                            <li>Spring WebFlux</li><li>Kafka</li><li>AWS</li><li>Databricks</li><li>PySpark</li><li>gRPC</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="job">
+                    <div class="job-meta">
+                        <span class="date">Dec 2018 – Jul 2021</span>
+                        <span class="place">Pune, MH</span>
+                    </div>
+                    <div class="job-body">
+                        <h3><span class="logo"><img src="assets/img/logos/tiaa.png" alt="TIAA logo" loading="lazy"/></span>TIAA GBS India</h3>
+                        <p class="role">Senior Software Developer</p>
+                        <ul>
+                            <li>Developed backend services and REST APIs in Java using Spring Boot.</li>
+                            <li>Built REST APIs for document e-signing, used by several internal apps.</li>
+                            <li>Created and managed Activiti BPM workflows for different transactions, on both the
+                                backend and UI side.</li>
+                            <li>Built reusable Angular UI components that are driven by backend Activiti processes.</li>
+                            <li>Wrote utilities to generate custom mainframe scripts for legacy integrations.</li>
+                            <li>Implemented distributed caching using Hazelcast.</li>
+                            <li>Unit tested the APIs with JUnit and Mockito, and used a BDD approach with Cucumber.</li>
+                            <li>Set up CI/CD pipelines with the DevOps team using Jenkins, Git and Maven.</li>
+                        </ul>
+                        <div class="awards">
+                            <span class="awards-label">Awards</span>
+                            <span>Best Individual Award, Q4 2020</span>
+                            <span>“Pat on the Back”, Q3 2020</span>
+                            <span>Runner-up, Innovation Premier League hackathon</span>
+                        </div>
+                        <ul class="tags">
+                            <li>Spring Boot</li><li>Angular</li><li>Activiti BPM</li><li>Hazelcast</li><li>Jenkins</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="job">
+                    <div class="job-meta">
+                        <span class="date">Jun 2017 – Dec 2018</span>
+                        <span class="place">Pune, MH</span>
+                    </div>
+                    <div class="job-body">
+                        <h3><span class="logo"><img src="assets/img/logos/bny.png" alt="BNY Mellon logo" loading="lazy"/></span>BNY Mellon Technology</h3>
+                        <p class="role">Application Developer</p>
+                        <ul>
+                            <li>Developed backend systems for financial services using Java, Spring Boot and Spring
+                                Batch.</li>
+                            <li>Built a Spring Batch application, triggered by JMS messages, that loads client data
+                                into production databases. This was part of the SEC Modernization project.</li>
+                            <li>Developed REST APIs for fund accounting and transaction calculations.</li>
+                            <li>Built a utility to automate fixing production transaction data, which was earlier
+                                done by hand.</li>
+                            <li>Developed APIs to keep track of daily client files dropped on production.</li>
+                            <li>Tuned SQL queries that fetch large datasets.</li>
+                            <li>Unit tested the APIs using TDD, JUnit and Mockito.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Spring Batch</li><li>JMS</li><li>Oracle</li><li>SQL</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Projects (hidden for now, uncomment to bring it back; also re-add the nav link and renumber kickers)
+    <section id="projects" class="section">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="kicker">04</p>
+                <h2>Projects</h2>
+            </header>
+            <div class="cards">
+                <article class="card">
+                    <p class="card-meta">TIAA · Internal</p>
+                    <h3>Tech_Evaluator</h3>
+                    <p>Online programming test platform built at TIAA for hiring candidates.</p>
+                    <ul>
+                        <li>Create test templates dynamically</li>
+                        <li>Run Java code online during the test</li>
+                        <li>Programming and MCQ rounds in one place</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Java</li><li>Spring Boot</li><li>Angular 8</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <p class="card-meta">TIAA · Hackathon runner-up</p>
+                    <h3>TalentTrack</h3>
+                    <p>Portal for the L&amp;D team at TIAA to keep track of employee skillsets.</p>
+                    <ul>
+                        <li>Skillset tracking for employees</li>
+                        <li>Can also be used for internal job postings</li>
+                        <li>Manages training programs</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Java</li><li>Spring Boot</li><li>Angular 7</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <p class="card-meta">College</p>
+                    <h3>Web Based Result Analysis</h3>
+                    <p>My B.E. final year project. A web app to analyse university exam results.</p>
+                    <ul class="tags">
+                        <li>Web</li><li>B.E. project</li>
+                    </ul>
+                </article>
             </div>
-            <div class="card">
-                <div class="card-content">
-                    <h4 class="brown-text light">Frameworks</h4>
-                    <div class="row text-center">
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/webflux.jpg" class="responsive-img"/>Spring WebFlux
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/boot.png" class="responsive-img"/>Spring Boot
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/springcloud.jpg" class="responsive-img"/>Spring Cloud
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/activiti.jpg" class="responsive-img"/>Activiti BPM
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/swagger.png" class="responsive-img"/>Swagger
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/hazelcast.png" class="responsive-img"/>Hazelcast
-                        </div>
-                    </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="kicker">04</p>
+                <h2>Skills</h2>
+            </header>
+            <div class="skills">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="tags lg">
+                        <li>Java</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>NoSQL</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h4 class="brown-text light">UI</h4>
-                    <div class="row text-center">
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/angular.png" class="responsive-img"/>Angular 6+
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/html5.png" class="responsive-img"/>HTML5
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/css3.png" class="responsive-img"/>CSS
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/javascript.png" class="responsive-img"/>Javascript
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/typescript.png" class="responsive-img"/>Typescript
-                        </div>
-                    </div>
+                <div class="skill-group">
+                    <h3>Frameworks</h3>
+                    <ul class="tags lg">
+                        <li>Spring Boot</li><li>Spring WebFlux</li><li>Spring Batch</li><li>Spring Cloud</li>
+                        <li>PySpark</li><li>Activiti BPM</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h4 class="brown-text light">Tools</h4>
-                    <div class="row text-center">
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/eclipse.png" class="responsive-img"/>Eclipse
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/ij.jpg" class="responsive-img"/>Intellij
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/jenkins.png" class="responsive-img"/>Jenkins
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/gradle.png" class="responsive-img"/>Gradle
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/maven.jpg" class="responsive-img"/>Maven
-                        </div>
-                        <div class="col s4 m2">
-                            <img alt="" src="/assets/img/docker.png" class="responsive-img"/>Docker
-                        </div>
-                    </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul class="tags lg">
+                        <li>Angular</li><li>React</li><li>HTML5</li><li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Cloud &amp; DevOps</h3>
+                    <ul class="tags lg">
+                        <li>AWS</li><li>Kubernetes</li><li>Docker</li><li>Jenkins</li><li>Git</li><li>Maven</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Databases</h3>
+                    <ul class="tags lg">
+                        <li>Oracle</li><li>MySQL</li><li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul class="tags lg">
+                        <li>IntelliJ</li><li>Postman</li><li>Swagger</li><li>Jira</li><li>Databricks</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>AI-assisted development</h3>
+                    <ul class="tags lg">
+                        <li>Claude</li><li>Cursor</li><li>GitHub Copilot</li><li>Devin</li>
+                    </ul>
+                </div>
+                <div class="skill-group wide">
+                    <h3>Practices</h3>
+                    <ul class="tags lg">
+                        <li>REST APIs</li><li>Microservices</li><li>Event-driven architecture</li>
+                        <li>Reactive programming</li><li>CI/CD</li><li>Data engineering</li><li>Agile</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="education" class="section scrollspy">
-        <h3 class="page-title white-text teal">Education</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-content">
-                            <p>
-                                <span class="card-title"><a
-                                        class="teal-text hoverline">Bachelor of Engineering</a></span>
-                            </p>
-                            <p class="brown-text">Sinhgad College of Engineering, Pune</p>
-                            <ul>
-                                <li>B.E. in Information Technology</li>
-                                <li>Grade : First Class with Distinction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-content">
-                            <p>
-                                <span class="card-title"><a class="teal-text hoverline">Diploma</a></span>
-                            </p>
-                            <p class="brown-text">Government Polytechnic Pune</p>
-                            <ul>
-                                <li>Diploma in Computer Engineering</li>
-                                <li>Grade : First Class with Distinction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="kicker">05</p>
+                <h2>Education</h2>
+            </header>
+            <div class="cards two">
+                <article class="card">
+                    <p class="card-meta">2014 – 2017 · Pune University</p>
+                    <h3>Bachelor of Engineering</h3>
+                    <p class="sub">Sinhgad College of Engineering, Vadgaon Bk., Pune</p>
+                    <ul>
+                        <li>B.E. in Information Technology</li>
+                        <li>First Class with Distinction</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <p class="card-meta">2011 – 2014 · Pune University</p>
+                    <h3>Diploma</h3>
+                    <p class="sub">Government Polytechnic Pune</p>
+                    <ul>
+                        <li>Diploma in Computer Engineering</li>
+                        <li>First Class with Distinction</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
-    <section id="contact" class="section scrollspy full-height">
-        <h3 class="page-title white-text teal">Contact</h3>
-        <div class="container">
-            <p>
-                <a aria-label="Email Tayyab" href="mailto:tayyabt120@gmail.com" data-position="top"
-                   data-tooltip="Email Tayyab" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                        class="fa fa-envelope"></i><a aria-label="Email Tayyab" href="mailto:tayyabt120@gmail.com"
-                                                      class="hoverline">mailto:tayyabt120@gmail.com</a></a>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="kicker">06</p>
+                <h2>Contact</h2>
+            </header>
+            <p class="contact-lead">
+                The best way to reach me is email. I'm also on LinkedIn.
             </p>
-            <p>
-                <a aria-label="View Tayyab on GitHub" href="https://github.com/tayyab-tamboli/" target="_blank"
-                   data-position="top"
-                   data-tooltip="View Tayyab on GitHub"
-                   class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i><a
-                        aria-label="Tayyab on Github" href="https://github.com/tayyab-tamboli/"
-                        class="hoverline">https://github.com/tayyab-tamboli/</a></a>
-            </p>
-            <p>
-                <a aria-label="View Tayyab on LinkedIn" href="https://www.linkedin.com/in/tayyab-tamboli-84a630126/"
-                   target="_blank" data-position="top" data-tooltip="View Tayyab on LinkedIn"
-                   class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                        class="fa fa-linkedin"></i><a
-                        aria-label="Tayyab on LinkedIn" href="https://www.linkedin.com/in/tayyab-tamboli-84a630126/"
-                        class="hoverline">https://www.linkedin.com/in/tayyab-tamboli-84a630126/</a></a>
-            </p>
-            <p>
-                <a aria-label="View Tayyab on Facebook" href="https://www.facebook.com/tayyab.tamboli1" target="_blank"
-                   data-position="top" data-tooltip="View Tayyab on Facebook"
-                   class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                        class="fa fa-facebook"></i><a
-                        aria-label="Tayyab on Facebook" href="https://www.facebook.com/tayyab.tamboli1"
-                        class="hoverline">https://www.facebook.com/tayyab.tamboli1/</a></a>
-            </p>
-            <p>
-                <a aria-label="View Tayyab on Instagram" href="https://www.instagram.com/tayyab__tamboli/"
-                   target="_blank"
-                   data-position="top" data-tooltip="View Tayyab on Instagram"
-                   class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                        class="fa fa-instagram"></i><a
-                        aria-label="Tayyab on Instagram" href="https://www.instagram.com/tayyab__tamboli/"
-                        class="hoverline">https://www.instagram.com/tayyab__tamboli/</a></a>
-            </p>
+            <a class="contact-mail" href="mailto:tayyabt120@gmail.com">tayyabt120@gmail.com</a>
+            <ul class="socials">
+                <li>
+                    <a href="https://www.linkedin.com/in/tayyabtamboli/" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4z"/></svg>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/tayyab-tamboli/" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+                        GitHub
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </main>
 
-<!-- jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<footer class="footer">
+    <div class="wrap">
+        <span>© <span id="year">2026</span> Tayyab Tamboli</span>
+        <a href="#top">Back to top ↑</a>
+    </div>
+</footer>
 
-<!-- Materialize - Compiled and minified JavaScript-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+    (function () {
+        const root = document.documentElement;
+
+        // Theme toggle
+        document.getElementById("theme-toggle").addEventListener("click", function () {
+            const dark = root.dataset.theme
+                ? root.dataset.theme === "dark"
+                : matchMedia("(prefers-color-scheme: dark)").matches;
+            root.dataset.theme = dark ? "light" : "dark";
+            try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+        });
+
+        // Mobile menu
+        const menuBtn = document.getElementById("menu-toggle");
+        const links = document.getElementById("nav-links");
+        menuBtn.addEventListener("click", function () {
+            const open = links.classList.toggle("open");
+            menuBtn.setAttribute("aria-expanded", open);
+        });
+        links.addEventListener("click", function (e) {
+            if (e.target.tagName === "A") {
+                links.classList.remove("open");
+                menuBtn.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        // Highlight the section in view
+        const navAnchors = links.querySelectorAll("a");
+        const spy = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                navAnchors.forEach(function (a) {
+                    a.classList.toggle("active", a.getAttribute("href") === "#" + entry.target.id);
+                });
+            });
+        }, {rootMargin: "-45% 0px -50% 0px"});
+        document.querySelectorAll("main section[id]").forEach(function (s) { spy.observe(s); });
+
+        // Fade sections in on scroll
+        const reveal = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in");
+                    reveal.unobserve(entry.target);
+                }
+            });
+        }, {rootMargin: "0px 0px -8% 0px"});
+        document.querySelectorAll(".section-head, .prose, .job, .card, .skill-group, .contact .wrap > :not(.section-head)").forEach(function (el) {
+            el.classList.add("reveal");
+            reveal.observe(el);
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    })();
 </script>
 </body>
 

@@ -5,3 +5,8 @@
 /.idea/modules.xml
 /.idea/tayyab-tamboli.github.io.iml
 /.idea/vcs.xml
+# macOS
+.DS_Store
+
+# Original photo source (site uses the cropped assets/img/profile.jpg)
+assets/img/Tayyab_new.jpg
