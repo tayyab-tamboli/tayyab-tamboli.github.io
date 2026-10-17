@@ -64,7 +64,7 @@
                target="_blank" rel="noopener">Resume</a>
             <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu"
                     aria-expanded="false" aria-controls="nav-links">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></svg>
             </button>
         </div>
     </div>
@@ -570,11 +570,15 @@
     (function () {
         const root = document.documentElement;
 
-        // Theme toggle
+        // Theme toggle (colours ease over briefly instead of flashing)
+        let themeTimer;
         document.getElementById("theme-toggle").addEventListener("click", function () {
             const dark = root.dataset.theme
                 ? root.dataset.theme === "dark"
                 : matchMedia("(prefers-color-scheme: dark)").matches;
+            root.classList.add("theme-anim");
+            clearTimeout(themeTimer);
+            themeTimer = setTimeout(function () { root.classList.remove("theme-anim"); }, 350);
             root.dataset.theme = dark ? "light" : "dark";
             try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
         });
@@ -582,16 +586,41 @@
         // Mobile menu
         const menuBtn = document.getElementById("menu-toggle");
         const links = document.getElementById("nav-links");
-        menuBtn.addEventListener("click", function () {
-            const open = links.classList.toggle("open");
+        function setMenu(open) {
+            links.classList.toggle("open", open);
             menuBtn.setAttribute("aria-expanded", open);
+            menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        }
+        menuBtn.addEventListener("click", function () {
+            setMenu(!links.classList.contains("open"));
         });
         links.addEventListener("click", function (e) {
-            if (e.target.tagName === "A") {
-                links.classList.remove("open");
-                menuBtn.setAttribute("aria-expanded", "false");
+            if (e.target.tagName === "A") setMenu(false);
+        });
+        // Never trap the reader: Escape or a tap outside closes it
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && links.classList.contains("open")) {
+                setMenu(false);
+                menuBtn.focus();
             }
         });
+        document.addEventListener("pointerdown", function (e) {
+            if (links.classList.contains("open") && !links.contains(e.target) && !menuBtn.contains(e.target)) {
+                setMenu(false);
+            }
+        });
+
+        // Show the nav's divider only once content scrolls under it
+        const nav = document.querySelector(".nav");
+        let ticking = false;
+        function updateNav() {
+            nav.classList.toggle("scrolled", window.scrollY > 4);
+            ticking = false;
+        }
+        window.addEventListener("scroll", function () {
+            if (!ticking) { ticking = true; requestAnimationFrame(updateNav); }
+        }, {passive: true});
+        updateNav();
 
         // Highlight the section in view
         const navAnchors = links.querySelectorAll("a");
